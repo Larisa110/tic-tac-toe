@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #E74C3C; /* Основной цвет фона */
+            font-family: Arial, sans-serif;
+            color: #FFF; /* Цвет текста */
+            flex-direction: column; /* Новое: выстраиваем элементы вертикально */
+        }
+
+        #game {
+            width: 300px;
+            height: 300px;
+            background-color: #C0392B; /* Цвет игрового поля */
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Тень */
+        }
+
+        .block {
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            border: 1px solid #FFF; /* Белая рамка */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .block:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* При наведении */
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="game"></div>
+    <div id="message"></div> <!-- Блок для вывода сообщений -->
+    <script src="js.js" defer></script>
+</body>
+</html>
